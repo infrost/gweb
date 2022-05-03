@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../css/index.css"> -->
+    <link rel="stylesheet" href="css/lixiao.css">
+    <script src='./js/fscreen.js'></script>
+    <!--获取系统当前时间-->
+    <script type="text/javascript">
+        setInterval(on,1000);  //这里是使时间动起来的地方
+        function on() {
+            var date1 =new Date;
+            var  year=date1.getFullYear();
+            var  month=date1.getMonth();
+            var day=date1.getDate();
+            var xinqi=date1.getDay();
+            
+            var timestart=year+"-"+(month+1)+"-"+day+"  08:00";
+            var timeend=year+"-"+(month+1)+"-"+day+"  23:00"
+            document.getElementById("timegetstart0").innerHTML = timestart;
+            document.getElementById("timegetend0").innerHTML = timeend;
+        }
+    </script>
+</head>
+
+<body>
+<div class="main" > 
+    <div id="topToolbar" style="z-index: 100;">
+        <div class="title">
+            <p>GWeb</p>
+            <div class="box">
+                <img src="images/actionbar.png" alt="">
+            </div>
+        </div>
+        <div class="subbar">
+            <div class="info" ><p style="font-size: 1em;" >Sellings</p></div>
+            <a href="YunShanService.html"><div class="detail"><p style="font-size: 1em;color:#ff70a9;">Services</p></div></a>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+<!--
+        <div class="timeon">
+            <img src="images/onvacation.png" alt ="">
+            <span id="timegetstart0"></span>
+            
+        </div>
+
+--> <div class="list">
+
+
+                <a href="tips.html"> <img src="images/sellingdetail.png" /></a>           
+
+    </div>
+
+    
+</div>
+<div id="bottomToolbar">
+    <div class="last">
+        <li>
+        <a href="index.html">
+            <img src="images/1.png" alt="">
+        </a>
+    </li>
+        <li>
+        <a href="Contacts.html">
+            <img src="images/2-deactive.png" alt="">
+        </a>
+        </li>
+        
+        <li>
+        <a href="settings.html">
+            <img src="images/3-deactive.png" alt="">
+        </a>
+        </li>
+    </div>
+</div>
+</body>
+
+</html>
